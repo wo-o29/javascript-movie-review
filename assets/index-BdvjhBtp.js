@@ -383,7 +383,7 @@ const $HeaderBox = () => {
   });
   const $logoLink = createElement("a", { href: "/javascript-movie-review" });
   const $logoImage = createElement("img", {
-    src: "/logo.png",
+    src: "./logo.png",
     alt: "MovieList"
   });
   $logoLink.appendChild($logoImage);
