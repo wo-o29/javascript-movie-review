@@ -165,7 +165,7 @@ const $EmptyList = () => {
   $box.append($emptyPlanet, $emptyText);
   return $box;
 };
-const defaultPosterPath = "/images/default-poster.svg";
+const defaultPosterPath = "./default-poster.svg";
 const imagePathPreFix = "https://image.tmdb.org/t/p/w440_and_h660_face";
 const $MovieItem = ({ title, poster_path, vote_average }) => {
   const $rate = createElement("p", {
@@ -369,7 +369,7 @@ const $SearchForm = () => {
     type: "submit"
   });
   const $searchIcon = createElement("img", {
-    src: "/images/search.svg",
+    src: "./search.svg",
     alt: "search"
   });
   $searchButton.appendChild($searchIcon);
@@ -383,7 +383,7 @@ const $HeaderBox = () => {
   });
   const $logoLink = createElement("a", { href: "/javascript-movie-review" });
   const $logoImage = createElement("img", {
-    src: "/images/logo.png",
+    src: "/logo.png",
     alt: "MovieList"
   });
   $logoLink.appendChild($logoImage);
