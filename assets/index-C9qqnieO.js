@@ -101,7 +101,7 @@ const $Banner = () => {
   <div class="overlay" aria-hidden="true"></div>
   <div class="top-rated-container">
     <div class="rate">
-      <img src="./images/star_empty.png" class="star" />
+      <img src="/images/star_empty.png" class="star" />
       <span class="rate-value">9.5</span>
     </div>
     <div class="title">인사이드 아웃2</div>
@@ -128,7 +128,7 @@ const addErrorBox = (text) => {
 };
 const $ErrorBox = ({ text }) => {
   const $errorPlanet = createElement("img", {
-    src: "./images/empty-planet.svg",
+    src: "/images/empty-planet.svg",
     className: "empty-planet",
     alt: text
   });
@@ -152,7 +152,7 @@ const getSearchedMovieList = async (query, page) => {
 };
 const $EmptyList = () => {
   const $emptyPlanet = createElement("img", {
-    src: "./images/empty-planet.svg",
+    src: "/images/empty-planet.svg",
     className: "empty-planet",
     alt: "검색 결과가 없습니다."
   });
@@ -172,7 +172,7 @@ const $MovieItem = ({ title, poster_path, vote_average }) => {
     className: "rate"
   });
   const $star = createElement("img", {
-    src: "./images/star_empty.png",
+    src: "/images/star_empty.png",
     className: "star"
   });
   const $rateValue = createElement("span", {
